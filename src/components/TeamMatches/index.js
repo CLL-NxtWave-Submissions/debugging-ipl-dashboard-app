@@ -47,7 +47,7 @@ class TeamMatches extends Component {
       ),
     }
 
-    this.setState({teamMatchesData: formattedData, isLoading: true})
+    this.setState({teamMatchesData: formattedData, isLoading: false})
   }
 
   renderRecentMatchesList = () => {
@@ -77,7 +77,7 @@ class TeamMatches extends Component {
   }
 
   renderLoader = () => (
-    <div testid="loader" className="loader-container">
+    <div className="loader-container">
       <Loader type="Oval" color="#ffffff" height={50} width={50} />
     </div>
   )
