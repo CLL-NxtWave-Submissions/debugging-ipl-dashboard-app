@@ -8,8 +8,8 @@ import './App.css'
 
 const App = () => (
   <Switch>
-    <Route path="/" component={Home} />
-    <Route path="/team-matches/id" />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/team-matches/id" />
     <Route component={NotFound} />
   </Switch>
 )
