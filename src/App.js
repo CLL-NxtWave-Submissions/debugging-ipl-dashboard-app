@@ -7,9 +7,11 @@ import TeamMatches from './components/TeamMatches'
 import './App.css'
 
 const App = () => (
+  <Switch>
     <Route path="/" component={Home} />
     <Route path="/team-matches/id" />
     <Route component={NotFound} />
+  </Switch>
 )
 
 export default App
